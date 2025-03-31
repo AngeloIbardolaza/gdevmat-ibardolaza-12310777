@@ -13,7 +13,6 @@ public class Walker
   // Random Stuff
   float randScale = random(5, 50);
   float standardDeviation = 1000;
-  float mean = 30;
   
   void Properties()
   {
@@ -32,10 +31,11 @@ public class Walker
    this.position.add(this.acceleration);
  }
 
-  public Walker() {
+  public Walker() 
+  {
       Properties();
       matterColor = randomRGB();
-    }
+  }
 
   public void render()
   { 
